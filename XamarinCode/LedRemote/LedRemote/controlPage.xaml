@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LedRemote.controlPage">
+    <!-- Colorpalete: 
+            Old:
+                LightBlue: #04CCF5
+                DarkBlue: #195EFF
+            RedKomplementari:
+                DarkRed: #940000
+                BrightRed: #FF1919
+                MiddleRed: #E00101
+                DarkGreen: #00942A
+                BrightGee: #00E040                
+    -->
+    <StackLayout >
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#7B00E0" Offset="0" x:Name="BgG1"/>
+                <GradientStop Color="#350061" Offset="1" x:Name="BgG2"/>
+            </LinearGradientBrush>
+
+        </StackLayout.Background>
+        <Frame BackgroundColor="#350061" x:Name="headerFrame" Padding="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="84*"/>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Source="Brush" Grid.Column="1" BackgroundColor="Transparent"
+                             x:Name="ThemeButton" Pressed="ThemeButton_Pressed"
+                             HeightRequest="1"/>
+                <Label Text="Leds Go!" x:Name="headerLabel" FontSize="30" TextColor="White" HorizontalOptions="Center" Grid.Column="2"/>
+            </Grid>
+        </Frame>
+
+        <StackLayout HorizontalOptions="Center">
+
+            <ImageButton Source="OFFRed"  x:Name="OnOff" HeightRequest="150" 
+                             HorizontalOptions="Center" CornerRadius="75"
+                             Pressed="OnOff_Pressed" Margin="5" BackgroundColor="Transparent"/>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Mode" x:Name="modeSelection" Pressed="modeSelection_Pressed"
+                        CornerRadius="10" 
+                        WidthRequest="999" 
+                        HorizontalOptions="Center" 
+                        Grid.Column="1" Grid.Row="0"
+                        TextColor="White">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,5">
+                            <GradientStop Color="#5F00AD" Offset="0" x:Name="M0G1"/>
+                            <GradientStop Color="#350061" Offset="1" x:Name="M0G2"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Entry Grid.Column="1" Grid.Row="1" x:Name="ipEntry" TextChanged="ipEntry_TextChanged"/>
+            </Grid>
+        </StackLayout>
+
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="10*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="1" HorizontalOptions="Fill" BackgroundColor="#20121212" x:Name="GridBackground" IsVisible="False"/>
+
+                <StackLayout Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Center">
+                    <Label Text="Brightness: " x:Name="BrightnessLabel" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                    <Slider x:Name="BrightnessSlider" Maximum="255" Minimum="0" 
+                            ValueChanged="BrightnessSlider_ValueChanged"
+                            DragCompleted="BrightnessSlider_DragCompleted"/>
+
+                    <StackLayout x:Name="Mode0" HorizontalOptions="Fill" Margin="0,50,0,0">
+                        <Label Text="Speed: " x:Name="SpeedLabelStRb" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                        <Slider x:Name="SpeedSliderStRb" Maximum="3" Minimum="0.01"
+                                ValueChanged="SpeedSliderStRb_ValueChanged"
+                                DragCompleted="SpeedSliderStRb_DragCompleted"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="Mode1" HorizontalOptions="Fill" Margin="0,50,0,0">
+                        <Label Text="Speed: " x:Name="SpeedLabelHueRb" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                        <Slider x:Name="SpeedSliderHueRb" Maximum="3" Minimum="0.01" Margin="0,0,0,50"
+                                ValueChanged="SpeedSliderHueRb_ValueChanged"
+                                DragCompleted="SpeedSliderHueRb_DragCompleted"/>
+
+                        <Label Text="Squish: " x:Name="SquishLabelHueRb" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                        <Slider x:Name="SquishSliderHueRb" Maximum="10" Minimum="0"
+                                ValueChanged="SquishSliderHueRb_ValueChanged"
+                                DragCompleted="SquishSliderHueRb_DragCompleted"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="Mode2" HorizontalOptions="Fill" BackgroundColor="red" Margin="0,50,0,0">
+                        <Label Text="Color: " x:Name="ColorLabelStatick" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+
+                    </StackLayout>
+
+                    <StackLayout x:Name="Mode3" HorizontalOptions="Fill" BackgroundColor="Violet" Margin="0,50,0,0">
+                        <Label Text="Speed: " x:Name="SpeedLabelFire" FontSize="20" HorizontalOptions="Center" TextColor="White"/>
+                        <Slider x:Name="SpeedSliderFire" Maximum="100" Minimum="0"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Column="1" HorizontalOptions="Fill" BackgroundColor="#F0121212" x:Name="Overlay" IsVisible="false"/>
+
+            </Grid>
+        </ScrollView>
+
+        <StackLayout BackgroundColor="Black" VerticalOptions="End" IsVisible="false" x:Name="DebugField">
+            <Label x:Name="http" Text="Not Connected" TextColor="Green"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

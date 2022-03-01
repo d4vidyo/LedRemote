@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LedRemote.ThemeSelect">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#334756" Offset="0" x:Name="BgG1"/>
+                    <GradientStop Color="#082032" Offset="1" x:Name="BgG2"/>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+
+            <Frame BackgroundColor="#082032" x:Name="headerFrame" Padding="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="10*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton Source="Back4THICshadow"  x:Name="BackButton"
+                                 Pressed="BackButton_Pressed" Grid.Column="1"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="1"/>
+                    <Label Text="Appearance" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Grid.Column="2"/>
+                </Grid>
+            </Frame>
+
+            <Button Margin="50,20,50,0" HeightRequest="50"
+                    FontSize="25" CornerRadius="10" Text="Violet"
+                    TextColor="White"
+                    x:Name="Violet" Pressed="Violet_Pressed">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,5">
+                        <GradientStop Color="#FF4C29" Offset="0" x:Name="VlG1"/>
+                        <GradientStop Color="#E85A1A" Offset="1" x:Name="VlG2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Grid Margin="10,5,10,15" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" BackgroundColor="Black">                    
+                    <StackLayout BackgroundColor="#350061" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#9D45E6" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#7B00E0" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#421D61" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="4" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#5F00AD" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+            </Grid>
+
+            <Button Margin="50,20,50,0" HeightRequest="50"
+                    FontSize="25" CornerRadius="10" Text="Brown"
+                    TextColor="White"
+                    x:Name="Brown" Pressed="Brown_Pressed">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,5">
+                        <GradientStop Color="#5F00AD" Offset="0" x:Name="BrG1"/>
+                        <GradientStop Color="#350061" Offset="1" x:Name="BrG2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Grid Margin="10,5,10,15" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#612400" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#E68045" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#E05401" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#61361D" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="4" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#AD4000" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+            </Grid>
+
+            <Button Margin="50,20,50,0" HeightRequest="50"
+                    FontSize="25" CornerRadius="10" Text="Dark"
+                    TextColor="White"
+                    x:Name="Dark" Pressed="Dark_Pressed">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,5">
+                        <GradientStop Color="#343434" Offset="0" x:Name="DaG1"/>
+                        <GradientStop Color="#350061" Offset="1" x:Name="DaG2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Grid Margin="10,5,10,15" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#191919" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#aaaaaa" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#343434" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#2b2b2b" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="4" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#343434" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+            </Grid>
+
+            <Button Margin="50,20,50,0" HeightRequest="50"
+                    FontSize="25" CornerRadius="10" Text="Debug"
+                    TextColor="White" VerticalOptions="EndAndExpand"
+                    x:Name="Debug" Pressed="Debug_Pressed">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,5">
+                        <GradientStop Color="#7B00E0" Offset="0" x:Name="DbG1"/>
+                        <GradientStop Color="#350061" Offset="1" x:Name="DbG2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Grid Margin="10,5,10,15" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#195EFF" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#04CCF5" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#04CCF5" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#04CCF5" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="4" BackgroundColor="Black">
+                    <StackLayout BackgroundColor="#04CCF5" VerticalOptions="FillAndExpand" Margin="1,1,1,1"/>
+                </StackLayout>
+            </Grid>
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

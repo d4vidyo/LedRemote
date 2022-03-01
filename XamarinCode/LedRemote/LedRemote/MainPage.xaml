@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LedRemote.MainPage">
+
+    <StackLayout BackgroundColor="LightBlue">
+
+        <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0" x:Name="header">
+            <Label Text="LEEEEEEDS GOO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Grid x:Name="LedGrid" HorizontalOptions="Center" Padding="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Mode0" Pressed="Mode0_Pressed" Text="StaticRainbow" CornerRadius="10" Grid.Column="0">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,-2" EndPoint="1,2">
+                        <GradientStop Color="#195EFF" Offset="0.3" x:Name="M0G1"/>
+                        <GradientStop Color="#04CCF5" Offset="1" x:Name="M0G2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Mode1" Pressed="Mode1_Pressed"  Text="HueRainbow" CornerRadius="10" Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,-2" EndPoint="1,2">
+                        <GradientStop Color="#195EFF" Offset="0.3" x:Name="M1G1"/>
+                        <GradientStop Color="#04CCF5" Offset="1" x:Name="M1G2"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+        <StackLayout x:Name="Box1" VerticalOptions="EndAndExpand">
+
+            <Grid HorizontalOptions="Center" VerticalOptions="End">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="310"/>
+                    <ColumnDefinition Width="0"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Brightness: " x:Name="label" FontSize="20" HorizontalOptions="Center" Grid.Column="1" Grid.Row="0"/>
+                <Slider x:Name="Slider" Grid.Column="1"
+                        ValueChanged="Slider_ValueChanged"
+                        DragCompleted="Slider_DragCompleted"
+                        Grid.Row="1" Maximum="100" Minimum="0" />
+
+                <Label Text="Speed: " x:Name="SpeedLabel" FontSize="20" HorizontalOptions="Center" Grid.Column="1" Grid.Row="2"/>
+                <Slider x:Name="SpeedSlider" Grid.Column="1"
+                        ValueChanged="SpeedSlider_ValueChanged"
+                        DragCompleted="SpeedSlider_DragCompleted"
+                        Grid.Row="3" Maximum="100" Minimum="1" />
+
+                <Label Text="Squish: " x:Name="SquishLabel" FontSize="20" HorizontalOptions="Center" Grid.Column="1" Grid.Row="4"/>
+                <Slider x:Name="SquishSlider" Grid.Column="1"
+                        ValueChanged="SquishSlider_ValueChanged"
+                        DragCompleted="SquishSlider_DragCompleted"
+                        Grid.Row="5" Maximum="20" Minimum="0" />
+            </Grid>
+
+            <Grid HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" x:Name="On" Pressed="On_Pressed" Text="On" CornerRadius="10">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,-2" EndPoint="1,2">
+                            <GradientStop Color="#195EFF" Offset="0.3" x:Name="OnG1"/>
+                            <GradientStop Color="#04CCF5" Offset="1" x:Name="OnG2"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Column="1" x:Name="Off" Pressed="Off_Pressed" Text="Off" CornerRadius="10">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,-2" EndPoint="1,2">
+                            <GradientStop Color="#195EFF" Offset="0.3" x:Name="OffG1"/>
+                            <GradientStop Color="#04CCF5" Offset="1" x:Name="OffG2"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End">
+            <Grid HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Status" Pressed="Status_Pressed" Text="Status" CornerRadius="2"/>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="Black" VerticalOptions="End">
+            <Label x:Name="http" Text="Not Connected" TextColor="Red"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LedRemote"
+             x:Class="LedRemote.SelectMode">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7B00E0" Offset="0" x:Name="BgG1"/>
+                    <GradientStop Color="#350061" Offset="1" x:Name="BgG2"/>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+            
+                    <Frame BackgroundColor="#2196F3" x:Name="headerFrame" Padding="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="10*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton Source="Back4THICshadow"  x:Name="BackButton"
+                                 Pressed="BackButton_Pressed" Grid.Column="1"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="1"/>
+                    <Label Text="Leds do?" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Grid.Column="2"/>
+                </Grid>
+            </Frame>
+
+            <ScrollView VerticalOptions="FillAndExpand" Margin="50,20,50,0" >
+                <StackLayout>
+                    <Button Text="statickRainbow" x:Name="Mode0Button" Pressed="Mode0Button_Pressed"
+                        CornerRadius="10" HorizontalOptions="Center"
+                        WidthRequest="999" HeightRequest="50" FontSize="25"
+                        Margin="0,20,0,0">
+                    </Button>
+
+
+                    <Button Text="hueRainbow" x:Name="Mode1Button" Pressed="Mode1Button_Pressed"
+                        CornerRadius="10" HorizontalOptions="Center"
+                        WidthRequest="999" HeightRequest="50" FontSize="25"
+                        Margin="0,20,0,0">
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,1" EndPoint="1,1">
+                                <GradientStop Offset="0" x:Name="G1"/>
+                                <GradientStop Offset="0.25" x:Name="G2"/>
+                                <GradientStop Offset="0.5" x:Name="G3"/>
+                                <GradientStop Offset="0.75" x:Name="G4"/>
+                                <GradientStop Offset="1" x:Name="G5"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+
+                    <Button Text="statickColor" x:Name="Mode2Button" Pressed="Mode2Button_Pressed"
+                        CornerRadius="10" HorizontalOptions="Center"
+                        WidthRequest="999" HeightRequest="50" FontSize="25"
+                        Margin="0,20,0,0">
+                    </Button>
+
+
+                    <Button Text="Fire/Ice" x:Name="Mode3Button" Pressed="Mode3Button_Pressed"
+                        CornerRadius="10" HorizontalOptions="Center"
+                        WidthRequest="999" HeightRequest="50" FontSize="25"
+                        Margin="0,20,0,0">
+                    </Button>
+
+                </StackLayout>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
