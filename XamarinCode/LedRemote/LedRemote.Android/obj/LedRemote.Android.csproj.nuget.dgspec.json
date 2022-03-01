@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj": {}
+    "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj": {
+    "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj",
+        "projectUniqueName": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj",
         "projectName": "LedRemote.Android",
-        "projectPath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj",
+        "projectPath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.Android\\LedRemote.Android.csproj",
         "packagesPath": "C:\\Users\\Deep_Thought42\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.Android\\obj\\",
+        "outputPath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj": {
-                "projectPath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj"
+              "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj": {
+                "projectPath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj"
               }
             }
           }
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj": {
+    "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj",
+        "projectUniqueName": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj",
         "projectName": "LedRemote",
-        "projectPath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj",
+        "projectPath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj",
         "packagesPath": "C:\\Users\\Deep_Thought42\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\obj\\",
+        "outputPath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Programme\\Visual Studio Shared\\NuGetPackages",

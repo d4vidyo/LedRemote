@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9G6RelVrDNY6QQ5L9EnRX0cwlGlweMALlGKJARhC+mTbdvSw7Mj0pwTbTFVsD76avayGnwDE9rocqvOomSPj5g==",
+  "dgSpecHash": "RmS/Bu3vffm5B27ibheCrOW6m69s3UwpNjwHKzUUogQ2IdxbN7Eq56XxUX+AY9GYJr1G8vfDkwXnPCz1iVYaNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote.UWP\\LedRemote.UWP.csproj",
+  "projectFilePath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote.UWP\\LedRemote.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",

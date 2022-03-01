@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wXujQrewNzSc+WLU2g+VziGJz2wWmD1ACi9yB85VCyPrnWphhCjX8pqCX644GCM4EMeDpnaAXhEhcEM72WXKFQ==",
+  "dgSpecHash": "QbVo0n6whZKhrhjFH/PG7d3w9N1QWigN0Xdd/7RNzu1XTPVIPT4Uht1SEdyJMaVpbaKtu77bGY3rvU50KGSVQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Deep_Thought42\\source\\repos\\LedRemote\\LedRemote\\LedRemote\\LedRemote.csproj",
+  "projectFilePath": "X:\\GitHub\\Projects\\LedRemote\\XamarinCode\\LedRemote\\LedRemote\\LedRemote.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Deep_Thought42\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Deep_Thought42\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
